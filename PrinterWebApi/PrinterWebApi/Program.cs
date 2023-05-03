@@ -23,7 +23,8 @@ if (app.Environment.IsDevelopment())
 app.UseCors(x => x
 .AllowAnyMethod()
 .AllowAnyHeader()
-.SetIsOriginAllowed(origin => true)
+.AllowAnyOrigin()
+//.SetIsOriginAllowed(origin => true)
 .AllowCredentials());
 
 app.UseAuthorization();
