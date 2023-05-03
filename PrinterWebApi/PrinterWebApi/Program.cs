@@ -8,7 +8,10 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 //var My
-builder.Services.AddCors();
+builder.Services.AddCors(options =>
+{ 
+    options.AddPolicy("CorsPolicy", builder => builder.AllowAnyMethod().AllowAnyHeader().SetIsOriginAllowed(origin => true).AllowCredentials());
+});
 
 var app = builder.Build();
 
@@ -20,12 +23,7 @@ if (app.Environment.IsDevelopment())
 }
 
 //app.UseHttpsRedirection();
-app.UseCors(x => x
-.AllowAnyMethod()
-.AllowAnyHeader()
-.AllowAnyOrigin()
-//.SetIsOriginAllowed(origin => true)
-.AllowCredentials());
+app.UseCors("CorsPolicy");
 
 app.UseAuthorization();
 
