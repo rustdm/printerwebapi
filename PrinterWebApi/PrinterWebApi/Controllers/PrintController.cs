@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Mvc;
 using PrinterWebApi.Models;
 using System.Diagnostics;
 using System.Reflection;
@@ -6,6 +7,7 @@ using ThermalTalk;
 
 namespace PrinterWebApi.Controllers
 {
+    [EnableCors]
     [Route("api/[controller]")]
     [ApiController]
     public class PrintController : ControllerBase
@@ -16,6 +18,7 @@ namespace PrinterWebApi.Controllers
 
 
         // GET api/print
+        [EnableCors]
         [HttpGet()]
         public string Get()
         {
@@ -27,6 +30,7 @@ namespace PrinterWebApi.Controllers
 
 
         // POST api/print/bytearray
+        [EnableCors]
         [HttpPost("bytearray")]
         public int Post([FromBody] PrintPayload payload)
         {
