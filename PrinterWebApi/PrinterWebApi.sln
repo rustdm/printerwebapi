@@ -5,6 +5,8 @@ VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrinterWebApi", "PrinterWebApi\PrinterWebApi.csproj", "{4CCC5440-A2B1-4DE3-937F-9035A83FDC6C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrinterConfiguration", "PrinterConfiguration\PrinterConfiguration.csproj", "{BCF93DD7-3284-42C7-B6E9-48239486E34B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{4CCC5440-A2B1-4DE3-937F-9035A83FDC6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CCC5440-A2B1-4DE3-937F-9035A83FDC6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CCC5440-A2B1-4DE3-937F-9035A83FDC6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCF93DD7-3284-42C7-B6E9-48239486E34B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCF93DD7-3284-42C7-B6E9-48239486E34B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCF93DD7-3284-42C7-B6E9-48239486E34B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCF93DD7-3284-42C7-B6E9-48239486E34B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

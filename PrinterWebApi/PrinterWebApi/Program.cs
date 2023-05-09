@@ -32,4 +32,7 @@ if (app.Environment.IsDevelopment())
 
 app.MapControllers();
 
+// Load the PNF ReliancePrinter configuration
+PrinterConfiguration.PrinterTools.FlashConfiguration();
+
 app.Run();
