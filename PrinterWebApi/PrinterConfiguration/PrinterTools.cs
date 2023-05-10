@@ -23,7 +23,7 @@ namespace PrinterConfiguration
 
                     Console.WriteLine("\nConfiguration Update Result: {0}", result);
 
-                    printer.Reboot();
+                    //printer.Reboot();
                 }
             }
         }
