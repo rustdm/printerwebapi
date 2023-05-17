@@ -393,6 +393,327 @@
           "bin/placeholder/PrinterConfiguration.dll": {}
         }
       }
+    },
+    "net6.0/linux-arm": {
+      "LibLog/5.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.4.0"
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
+      "Microsoft.CSharp/4.4.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.Extensions.ApiDescription.Server.props": {},
+          "build/Microsoft.Extensions.ApiDescription.Server.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.props": {},
+          "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.targets": {}
+        }
+      },
+      "Microsoft.OpenApi/1.2.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.OpenApi.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.OpenApi.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.Win32.SystemEvents/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "PTIRelianceLib/1.3.0": {
+        "type": "package",
+        "dependencies": {
+          "LibLog": "5.0.3",
+          "Newtonsoft.Json": "[9.0.1, 12.12.0.1)",
+          "System.Collections.Immutable": "1.5.0",
+          "System.Drawing.Common": "4.5.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/PTIRelianceLib.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/PTIRelianceLib.dll": {
+            "related": ".xml"
+          }
+        },
+        "native": {
+          "runtimes/linux-arm/native/libhidapi.so": {}
+        },
+        "build": {
+          "build/netstandard2.0/_._": {}
+        }
+      },
+      "runtime.linux-arm.runtime.native.System.IO.Ports/6.0.0": {
+        "type": "package",
+        "native": {
+          "runtimes/linux-arm/native/libSystem.IO.Ports.Native.so": {}
+        }
+      },
+      "runtime.linux-arm64.runtime.native.System.IO.Ports/6.0.0": {
+        "type": "package"
+      },
+      "runtime.linux-x64.runtime.native.System.IO.Ports/6.0.0": {
+        "type": "package"
+      },
+      "runtime.native.System.IO.Ports/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "runtime.linux-arm.runtime.native.System.IO.Ports": "6.0.0",
+          "runtime.linux-arm64.runtime.native.System.IO.Ports": "6.0.0",
+          "runtime.linux-x64.runtime.native.System.IO.Ports": "6.0.0",
+          "runtime.osx-arm64.runtime.native.System.IO.Ports": "6.0.0",
+          "runtime.osx-x64.runtime.native.System.IO.Ports": "6.0.0"
+        }
+      },
+      "runtime.osx-arm64.runtime.native.System.IO.Ports/6.0.0": {
+        "type": "package"
+      },
+      "runtime.osx-x64.runtime.native.System.IO.Ports/6.0.0": {
+        "type": "package"
+      },
+      "Swashbuckle.AspNetCore/6.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.ApiDescription.Server": "3.0.0",
+          "Swashbuckle.AspNetCore.Swagger": "6.2.3",
+          "Swashbuckle.AspNetCore.SwaggerGen": "6.2.3",
+          "Swashbuckle.AspNetCore.SwaggerUI": "6.2.3"
+        },
+        "build": {
+          "build/Swashbuckle.AspNetCore.props": {}
+        }
+      },
+      "Swashbuckle.AspNetCore.Swagger/6.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.OpenApi": "1.2.3"
+        },
+        "compile": {
+          "lib/net6.0/Swashbuckle.AspNetCore.Swagger.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Swashbuckle.AspNetCore.Swagger.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Swashbuckle.AspNetCore.SwaggerGen/6.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Swashbuckle.AspNetCore.Swagger": "6.2.3"
+        },
+        "compile": {
+          "lib/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Swashbuckle.AspNetCore.SwaggerUI/6.2.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "System/4.1.311.2": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "(, )"
+        },
+        "compile": {
+          "lib/net451/SXN.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net451/SXN.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Collections.Immutable/1.5.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/System.Collections.Immutable.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Collections.Immutable.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Core/3.5.21022.8": {
+        "type": "package",
+        "compile": {
+          "lib/net20/System.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net20/System.Core.dll": {}
+        }
+      },
+      "System.Drawing.Common/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/System.Drawing.Common.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/unix/lib/net6.0/System.Drawing.Common.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "System.IO.Ports/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "runtime.native.System.IO.Ports": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/unix/lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "System.Windows.Forms/4.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/System.Windows.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/System.Windows.Forms.dll": {}
+        }
+      },
+      "ThermalTalk/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "2.1.1",
+          "Newtonsoft.Json": "13.0.1",
+          "System": "2.1.1",
+          "System.Core": "2.1.1",
+          "System.IO.Ports": "6.0.0",
+          "System.Windows.Forms": "2.1.1",
+          "ThermalTalk.Imaging": "2.0.0"
+        },
+        "compile": {
+          "lib/net5.0/ThermalTalk.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/ThermalTalk.dll": {}
+        }
+      },
+      "ThermalTalk.Imaging/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Drawing.Common": "6.0.0"
+        },
+        "compile": {
+          "lib/net5.0/ThermalTalk.Imaging.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/ThermalTalk.Imaging.dll": {}
+        }
+      },
+      "PrinterConfiguration/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "PTIRelianceLib": "1.3.0"
+        },
+        "compile": {
+          "bin/placeholder/PrinterConfiguration.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PrinterConfiguration.dll": {}
+        }
+      }
     }
   },
   "libraries": {
@@ -1058,6 +1379,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Runtime.linux-arm",
+            "version": "[6.0.16, 6.0.16]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Crossgen2.win-x64",
+            "version": "[6.0.16, 6.0.16]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.linux-arm",
+            "version": "[6.0.16, 6.0.16]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Runtime.linux-arm",
+            "version": "[6.0.16, 6.0.16]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -1067,6 +1406,11 @@
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "linux-arm": {
+        "#import": []
       }
     }
   },
@@ -1078,7 +1422,8 @@
       "message": "ThermalTalk 2.1.1 depends on Microsoft.CSharp (>= 2.1.1) but Microsoft.CSharp 2.1.1 was not found. An approximate best match of Microsoft.CSharp 4.0.0 was resolved.",
       "libraryId": "Microsoft.CSharp",
       "targetGraphs": [
-        "net6.0"
+        "net6.0",
+        "net6.0/linux-arm"
       ]
     },
     {
@@ -1088,7 +1433,8 @@
       "message": "ThermalTalk 2.1.1 depends on System (>= 2.1.1) but System 2.1.1 was not found. An approximate best match of System 4.1.311.2 was resolved.",
       "libraryId": "System",
       "targetGraphs": [
-        "net6.0"
+        "net6.0",
+        "net6.0/linux-arm"
       ]
     },
     {
@@ -1098,7 +1444,8 @@
       "message": "ThermalTalk 2.1.1 depends on System.Core (>= 2.1.1) but System.Core 2.1.1 was not found. An approximate best match of System.Core 3.5.21022.8 was resolved.",
       "libraryId": "System.Core",
       "targetGraphs": [
-        "net6.0"
+        "net6.0",
+        "net6.0/linux-arm"
       ]
     },
     {
@@ -1108,7 +1455,8 @@
       "message": "ThermalTalk 2.1.1 depends on System.Windows.Forms (>= 2.1.1) but System.Windows.Forms 2.1.1 was not found. An approximate best match of System.Windows.Forms 4.0.0 was resolved.",
       "libraryId": "System.Windows.Forms",
       "targetGraphs": [
-        "net6.0"
+        "net6.0",
+        "net6.0/linux-arm"
       ]
     },
     {
@@ -1118,7 +1466,8 @@
       "message": "Detected package version outside of dependency constraint: PTIRelianceLib 1.3.0 requires Newtonsoft.Json (>= 9.0.1 && < 12.12.0.1) but version Newtonsoft.Json 13.0.3 was resolved.",
       "libraryId": "Newtonsoft.Json",
       "targetGraphs": [
-        "net6.0"
+        "net6.0",
+        "net6.0/linux-arm"
       ]
     },
     {

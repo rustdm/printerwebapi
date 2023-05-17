@@ -1,0 +1,13 @@
+C:\Users\drust\workspace\PTI.Reliance_PrinterWebApi\PrinterWebApi\PrinterConfiguration\bin\Debug\net6.0\hidapi.dll
+C:\Users\drust\workspace\PTI.Reliance_PrinterWebApi\PrinterWebApi\PrinterConfiguration\bin\Debug\net6.0\PrinterConfiguration.deps.json
+C:\Users\drust\workspace\PTI.Reliance_PrinterWebApi\PrinterWebApi\PrinterConfiguration\bin\Debug\net6.0\PrinterConfiguration.dll
+C:\Users\drust\workspace\PTI.Reliance_PrinterWebApi\PrinterWebApi\PrinterConfiguration\bin\Debug\net6.0\PrinterConfiguration.pdb
+C:\Users\drust\workspace\PTI.Reliance_PrinterWebApi\PrinterWebApi\PrinterConfiguration\obj\Debug\net6.0\PrinterConfiguration.csproj.AssemblyReference.cache
+C:\Users\drust\workspace\PTI.Reliance_PrinterWebApi\PrinterWebApi\PrinterConfiguration\obj\Debug\net6.0\PrinterConfiguration.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\drust\workspace\PTI.Reliance_PrinterWebApi\PrinterWebApi\PrinterConfiguration\obj\Debug\net6.0\PrinterConfiguration.AssemblyInfoInputs.cache
+C:\Users\drust\workspace\PTI.Reliance_PrinterWebApi\PrinterWebApi\PrinterConfiguration\obj\Debug\net6.0\PrinterConfiguration.AssemblyInfo.cs
+C:\Users\drust\workspace\PTI.Reliance_PrinterWebApi\PrinterWebApi\PrinterConfiguration\obj\Debug\net6.0\PrinterConfiguration.csproj.CoreCompileInputs.cache
+C:\Users\drust\workspace\PTI.Reliance_PrinterWebApi\PrinterWebApi\PrinterConfiguration\obj\Debug\net6.0\PrinterConfiguration.dll
+C:\Users\drust\workspace\PTI.Reliance_PrinterWebApi\PrinterWebApi\PrinterConfiguration\obj\Debug\net6.0\refint\PrinterConfiguration.dll
+C:\Users\drust\workspace\PTI.Reliance_PrinterWebApi\PrinterWebApi\PrinterConfiguration\obj\Debug\net6.0\PrinterConfiguration.pdb
+C:\Users\drust\workspace\PTI.Reliance_PrinterWebApi\PrinterWebApi\PrinterConfiguration\obj\Debug\net6.0\ref\PrinterConfiguration.dll
